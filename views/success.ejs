@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Authentication Successful</title>
+</head>
+<body>
+  <h1>Authentication Successful!</h1>
+  <h2>Welcome, <%= userData.login %>!</h2>
+  <img src="<%= userData.avatar_url %>" alt="Profile Picture">
+  <p>Name: <%= userData.name %></p>
+  <p>Public Repos: <%= userData.public_repos %></p>
+  <a href="/logout">Logout</a>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Authentication Successful</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 50px;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .profile-card {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+      font-weight: bold;
+      color: #333;
+    }
+
+    hr {
+      border-color: #ddd;
+    }
+
+    p {
+      color: #777;
+    }
+
+    .logout-link {
+      margin-top: 20px;
+      display: inline-block;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-card">
+      <img src="<%= userData.avatar_url %>" alt="Profile Picture" class="profile-picture">
+      <h1><%= userData.name %></h1>
+      <h3><%= userData.login %></h3>
+      <hr>
+      <p><i class="fas fa-map-marker-alt"></i> <%= userData.location %></p>
+      <p><i class="fas fa-envelope"></i> <%= userData.email %></p>
+      <p><i class="fas fa-link"></i> <%= userData.blog %></p>
+      <p><i class="fas fa-users"></i> <%= userData.followers %> followers</p>
+      <p><i class="fas fa-code"></i> <%= userData.public_repos %> public repositories</p>
+    </div>
+    <div class="text-center">
+      <a href="/logout" class="logout-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

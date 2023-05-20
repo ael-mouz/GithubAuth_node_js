@@ -1,0 +1,58 @@
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+# Distribution directories
+dist/
+build/
+out/
+
+# Environment variables
+.env
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Test reports
+coverage/
+
+# Compiled binary addons
+build/Release
+
+# MacOS-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Windows Desktop.ini files
+Desktop.ini
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Backup files
+*~
+*.swp
+*.bak
